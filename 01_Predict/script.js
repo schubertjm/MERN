@@ -21,8 +21,8 @@ console.log(otherName); //Elon
 
 //problem 3
 const person = {
-    name: 'Phil Smith',
-    age: 47,
+    name: 'Phil Smithh',
+    age: 49,
     height: '6 feet'
 }
 const password = '12345';
