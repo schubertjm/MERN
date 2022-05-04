@@ -30,3 +30,4 @@ const n2 = new Sensei("Michael", 20);
 n2.showStats();
 n2.speakWisdom();
 n2.showStats();
+console.log(n2.wisdom)
