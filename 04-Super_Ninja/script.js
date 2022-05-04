@@ -24,6 +24,7 @@ n1.showStats();
 n1.drinkSake();
 n1.showStats();
 
+//sensei
 const n2 = new Sensei("Michael", 20);
 
 n2.showStats();
