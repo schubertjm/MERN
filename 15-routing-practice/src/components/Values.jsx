@@ -10,8 +10,8 @@ const Values = () => {
             <div>
             {
                 isNaN(value)?
-                <h2 backgroundColor= {backColor} color= {fontColor}>The word is: {value}</h2>:
-                <h2>The number is: {value}</h2>
+                <p style= {{color: fontColor, backgroundColor: backColor}}>The word is: {value}</p>:
+                <p style= {{color: fontColor, backgroundColor: backColor}}>The number is: {value}</p>
             }
             </div>
         </>
