@@ -1,24 +1,35 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
+import { useHistory } from 'react-router-dom'
 import './App.css';
+import Form from './components/Form'
+import APIResult from './components/APIResult'
+
+import {
+  BrowserRouter,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 
 function App() {
+  
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <h1>Star Wars API</h1>
+        <div className="flex">
+          <Form></Form>
+        </div>
+        <hr/>
+          <Switch>
+            <Route exact path = "/:type/:id">
+              <APIResult></APIResult>
+            </Route>
+          </Switch>
+      </div>
+    </BrowserRouter>
+    
   );
 }
 
