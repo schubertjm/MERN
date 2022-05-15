@@ -45,4 +45,12 @@ app.get("api/companies/new", (req,res)=>{
     res.json(newCompany)
 })
 
+// app.get("api/company", (req,res)=>{
+
+//     let newUser = new User();
+//     let newCompany = new Company();
+//     result = newUser + newCompany
+//     res.json(result)
+// })
+
 app.listen(port, ()=>{console.log(`Listening on port ${port}`)});
